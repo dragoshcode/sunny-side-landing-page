@@ -59,6 +59,27 @@ header nav .menu button {
   border: none;
   background: none;
 }
+header nav ul {
+  gap: 2.5rem;
+  align-items: center;
+}
+header nav ul a {
+  color: white;
+  font-size: 1.35rem;
+}
+header nav ul a.contact {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  display: inline-block;
+  background-color: white;
+  padding: 1.75rem 2rem;
+  border-radius: 3rem;
+  transition: 0.2s ease-in-out;
+}
+header nav ul a.contact:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 header .home {
   margin-top: 7.5rem;
   text-align: center;
@@ -296,4 +317,35 @@ footer .footer__social img {
 }
 footer .footer__social img:hover {
   filter: brightness(0) invert(1);
+}
+
+@media only screen and (min-width: 545px) {
+  header {
+    background-image: url(/assets/images/desktop/image-header.jpg);
+    background-position: top;
+    height: 65rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+  nav .hidden {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  header {
+    height: 70rem;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  header {
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 1660px) {
+  header nav {
+    padding: 3rem 10rem;
+  }
 }

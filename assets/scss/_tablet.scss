@@ -1,0 +1,19 @@
+@media only screen and (min-width: 545px) {
+    header {
+      background-image: url(/assets/images/desktop/image-header.jpg);
+      background-position: top;
+      height: 65rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    nav {
+      .menu {
+        display: none;
+      }
+  
+      .hidden {
+        display: block;
+      }
+    }
+  }
