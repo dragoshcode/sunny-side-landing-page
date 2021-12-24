@@ -1,3 +1,282 @@
 @forward "media";
 @forward "reset";
 @use "variables" as v;
+
+header {
+  // *** 640 - 675px somewhere to change
+  background-image: url(/assets/images/mobile/image-header.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 63rem;
+
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+    .menu button {
+      border: none;
+      background: none;
+    }
+  }
+
+  .home {
+    margin-top: 7.5rem;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+      color: v.$wt;
+      font-family: "Fraunces", serif;
+      letter-spacing: 0.6rem;
+      font-weight: 900;
+    }
+    img {
+      margin-top: 8rem;
+    }
+  }
+}
+
+.features {
+  text-align: center;
+
+  &__content-transform {
+    margin-top: 6rem;
+    h2 {
+      font-family: "Fraunces", serif;
+      font-size: 3.5rem;
+      color: v.$vr-dk-des-blue;
+      font-weight: 900;
+    }
+
+    p {
+      padding: 1.5rem;
+      font-size: 1.8rem;
+      margin-top: 1.75rem;
+      color: v.$dk-gyish-blue;
+      font-weight: 500;
+      line-height: 2.8rem;
+    }
+
+    a {
+      color: v.$vr-dk-des-blue;
+      font-size: 1.75rem;
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      margin-top: 3rem;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14rem;
+        height: 1rem;
+        border-radius: 1rem;
+        background-color: v.$yellow;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateY(1.4rem);
+        opacity: 0.4;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image-standout {
+    margin-top: 7rem;
+  }
+
+  &__content-standout {
+    margin-top: 6rem;
+    h2 {
+      font-family: "Fraunces", serif;
+      font-size: 3.5rem;
+      color: v.$vr-dk-des-blue;
+      font-weight: 900;
+    }
+
+    p {
+      padding: 3rem;
+      font-size: 1.8rem;
+      color: v.$dk-gyish-blue;
+      font-weight: 500;
+      line-height: 2.8rem;
+    }
+
+    a {
+      color: v.$vr-dk-des-blue;
+      font-size: 1.75rem;
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      margin-top: 3rem;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14rem;
+        height: 1rem;
+        border-radius: 1rem;
+        background-color: v.$sft-red;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateY(1.4rem);
+        opacity: 0.4;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__cherry {
+    margin-top: 6rem;
+    color: v.$dk-des-cyan;
+    background-image: url(/assets/images/mobile/image-graphic-design.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 59rem;
+    h2 {
+      font-size: 3rem;
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__orange {
+    color: v.$dk-blue;
+    background-image: url(/assets/images/mobile/image-photography.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 59rem;
+    h2 {
+      font-size: 3rem;
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.testimonials {
+  margin-top: 5rem;
+  text-align: center;
+  h2 {
+    font-size: 1.75rem;
+    color: v.$dk-gyish-blue;
+    font-family: "Fraunces", serif;
+    letter-spacing: 0.4rem;
+    margin-bottom: 5.5rem;
+  }
+
+  &__container {
+    gap: 6.25rem;
+
+    &-card {
+      box-shadow: 1px 3px 8px 2px rgba(197, 197, 197, 0.1);
+      padding: 3.5rem 0;
+      width: 90%;
+      margin: 0 auto;
+      img {
+        width: 5.3rem;
+        border-radius: 50%;
+      }
+      p {
+        padding: 2rem 6rem;
+        color: v.$vr-dk-gyish-blue;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+      }
+      span {
+        display: block;
+        &.name {
+          font-family: "Fraunces", serif;
+          font-size: 1.4rem;
+          font-weight: 700;
+        }
+        &.role {
+          margin-top: 0.55rem;
+          color: v.$gyish-blue;
+          font-size: 1.15rem;
+        }
+      }
+    }
+  }
+}
+
+.image-square {
+  margin-top: 7rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  text-align: center;
+  background-color: v.$lt-cyan;
+  padding: 6rem 3rem;
+
+  nav {
+    margin-top: 3rem;
+    ul {
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      li a {
+        font-size: 1.5rem;
+        color: v.$dk-des-cyan;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          color: v.$wt;
+        }
+      }
+    }
+  }
+
+  .footer__social {
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+
+    img {
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

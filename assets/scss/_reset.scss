@@ -4,9 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   // font-family: 'Fraunces', serif;
-  // * use on need in * style.scss *
 }
 
 html {
@@ -17,5 +16,30 @@ html {
 
 body {
   min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.features img,
+.image-square img {
   width: 100%;
 }

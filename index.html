@@ -7,10 +7,10 @@
   <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Barlow (600) -->
+  <!-- Barlow (500/600) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap" rel="stylesheet">
 
   <!-- Fraunces (700/900) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,124 @@
 
 <body>
 
-  
+
+  <header>
+    <nav class="flex">
+      <div class="logo">
+        <figure>
+          <img src="./assets/images/logo.svg" alt="logo">
+        </figure>
+      </div>
+      <div class="menu">
+        <button>
+          <img src="./assets/images/icon-hamburger.svg" alt="menu">
+        </button>
+      </div>
+      <div class="list hidden">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a class="list__contact" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="home">
+      <h1>WE ARE CREATIVES</h1>
+      <img src="./assets/images/icon-arrow-down.svg" aria-hidden="true" alt="arrow-down">
+    </section>
+  </header>
+
+  <main>
+    <section class="features grid">
+      <div class="features__image-transform">
+        <img src="./assets/images/mobile/image-transform.jpg" alt="transform">
+      </div>
+      <div class="features__content-transform">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#">LEARN MORE</a>
+      </div>
+      <div class="features__image-standout">
+        <img src="./assets/images/mobile/image-stand-out.jpg" alt="stand-out">
+      </div>
+      <div class="features__content-standout">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places. </p>
+        <a href="#">LEARN MORE</a>
+      </div>
+      <div class="features__cherry flex">
+        <h2>Graphic Design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential clients’ attention.</p>
+      </div>
+      <div class="features__orange flex">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>CLIENT TESTIMONIALS</h2>
+      <section class="testimonials__container grid">
+        <div class="testimonials__container-card">
+          <img src="./assets/images/image-emily.jpg" alt="emily">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.</p>
+          <span class="name">Emily R.</span>
+          <span class="role">Marketing Director</span>
+        </div>
+        <div class="testimonials__container-card">
+          <img src="./assets/images/image-thomas.jpg" alt="thomas">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.</p>
+          <span class="name">Thomas S.</span>
+          <span class="role">Chief Operating Officer</span>
+        </div>
+        <div class="testimonials__container-card">
+          <img src="./assets/images/image-jennie.jpg" alt="jennie">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <span class="name">Jennie F.</span>
+          <span class="role">Business Owner</span>
+        </div>
+      </section>
+    </section>
+
+    <section class="image-square grid">
+      <img src="./assets/images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles">
+      <img src="./assets/images/mobile/image-gallery-orange.jpg" alt="orange slice">
+      <img src="./assets/images/mobile/image-gallery-cone.jpg" alt="ice cream cone">
+      <img src="./assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__logo">
+      <figure>
+        <img src="./assets/images/logo-green.svg" alt="logo">
+      </figure>
+    </div>
+    <nav>
+      <ul class="flex">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="footer__social flex">
+      <a href="#" target="_blank"><img src="./assets/images/icon-facebook.svg" alt="facebook"></a>
+      <a href="#" target="_blank"><img src="./assets/images/icon-instagram.svg" alt="instagram"></a>
+      <a href="#" target="_blank"><img src="./assets/images/icon-twitter.svg" alt="twitter"></a>
+      <a href="#" target="_blank"><img src="./assets/images/icon-pinterest.svg" alt="pinterest"></a>
+    </div>
+  </footer>
+
+
+
 
 </body>
 
