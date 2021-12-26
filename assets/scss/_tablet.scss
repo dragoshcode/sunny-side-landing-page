@@ -14,22 +14,6 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  header {
-    height: 70rem;
-  }
-
-  nav {
-    .menu {
-      display: none;
-    }
-
-    .hidden {
-      display: block;
-    }
-  }
-}
-
 @media only screen and (min-width: 566px) {
   .features {
     &__cherry,
@@ -56,6 +40,22 @@
   .image-square {
     .image-size {
       height: 31rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 70rem;
+  }
+
+  nav {
+    .menu {
+      display: none;
+    }
+
+    .hidden {
+      display: block;
     }
   }
 }
@@ -110,15 +110,11 @@
     &__cherry {
       background-image: url(/assets/images/desktop/image-graphic-design.jpg);
       height: 43rem;
-
-      
     }
 
     &__orange {
       background-image: url(/assets/images/desktop/image-photography.jpg);
       height: 43rem;
-
-      
     }
   }
 

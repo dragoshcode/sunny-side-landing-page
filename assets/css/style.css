@@ -368,18 +368,6 @@ footer .footer__social img:hover {
     height: 65rem;
   }
 }
-@media only screen and (min-width: 768px) {
-  header {
-    height: 70rem;
-  }
-
-  nav .menu {
-    display: none;
-  }
-  nav .hidden {
-    display: block;
-  }
-}
 @media only screen and (min-width: 566px) {
   .features__cherry, .features__orange {
     height: 72rem;
@@ -396,6 +384,18 @@ footer .footer__social img:hover {
 
   .image-square .image-size {
     height: 31rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 70rem;
+  }
+
+  nav .menu {
+    display: none;
+  }
+  nav .hidden {
+    display: block;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -473,16 +473,6 @@ footer .footer__social img:hover {
     padding: 2.5rem 4rem;
   }
 }
-@media only screen and (min-width: 1360px) {
-  header {
-    background-position: center;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  header nav {
-    padding: 3rem 7rem;
-  }
-}
 @media only screen and (min-width: 947px) {
   .features__orange p {
     padding: 2.5rem 9rem;
@@ -505,5 +495,15 @@ footer .footer__social img:hover {
 @media only screen and (min-width: 1245px) {
   .features__cherry, .features__orange {
     height: 55rem;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  header {
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header nav {
+    padding: 3rem 7rem;
   }
 }
