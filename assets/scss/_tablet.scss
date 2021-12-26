@@ -1,19 +1,163 @@
+@media only screen and (min-width: 470px) {
+  .image-square {
+    .image-size {
+      height: 23rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 545px) {
-    header {
-      background-image: url(/assets/images/desktop/image-header.jpg);
-      background-position: top;
-      height: 65rem;
+  header {
+    background-image: url(/assets/images/desktop/image-header.jpg);
+    background-position: top;
+    height: 65rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 70rem;
+  }
+
+  nav {
+    .menu {
+      display: none;
+    }
+
+    .hidden {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 566px) {
+  .features {
+    &__cherry,
+    &__orange {
+      height: 72rem;
     }
   }
 
-  @media only screen and (min-width: 768px) {
-    nav {
-      .menu {
-        display: none;
-      }
-  
-      .hidden {
-        display: block;
-      }
+  .image-square {
+    .image-size {
+      height: 26rem;
     }
   }
+}
+
+@media only screen and (min-width: 646px) {
+  .features {
+    &__cherry,
+    &__orange {
+      height: 84rem;
+    }
+  }
+
+  .image-square {
+    .image-size {
+      height: 31rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .features {
+    &__cherry,
+    &__orange {
+      height: 89rem;
+    }
+  }
+
+  .image-square {
+    .image-size {
+      height: 35rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  body {
+    .padding {
+      padding: 0;
+    }
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__image-transform {
+      order: -1;
+    }
+
+    .order {
+      order: -2;
+    }
+
+    &__content-transform,
+    &__content-standout {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .margin-top {
+      margin-top: 0;
+    }
+
+    &__cherry {
+      background-image: url(/assets/images/desktop/image-graphic-design.jpg);
+      height: 43rem;
+
+      
+    }
+
+    &__orange {
+      background-image: url(/assets/images/desktop/image-photography.jpg);
+      height: 43rem;
+
+      
+    }
+  }
+
+  .testimonials__container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    h2 {
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      margin: 3rem 0 3rem 0;
+    }
+  }
+
+  .image-square {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    &-milk-bottles {
+      background-image: url(/assets/images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    &-orange {
+      background-image: url(/assets/images/desktop/image-gallery-orange.jpg);
+    }
+
+    &-ice-cream-cone {
+      background-image: url(/assets/images/desktop/image-gallery-cone.jpg);
+    }
+
+    &-sugar-cubes {
+      background-image: url(/assets/images/desktop/image-gallery-sugarcubes.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 870px) and (max-width: 938px) {
+  .features__cherry p,
+  .features__orange p {
+    padding: 2.5rem 4rem;
+  }
+}

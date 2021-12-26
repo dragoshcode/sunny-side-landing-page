@@ -10,8 +10,16 @@ header {
   nav {
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 3rem 4rem;
 
+    figure img {
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        filter: invert(59%) sepia(98%) saturate(2594%) hue-rotate(344deg)
+          brightness(101%) contrast(104%);
+      }
+    }
 
     .menu button {
       border: none;
@@ -24,7 +32,12 @@ header {
 
       a {
         color: v.$wt;
-        font-size: 1.35rem;
+        font-size: clamp(1.35rem, 1.3rem + 0.65vw, 1.55rem);
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 0.65;
+        }
 
         &.contact {
           color: v.$vr-dk-des-blue;
@@ -36,6 +49,7 @@ header {
           transition: 0.2s ease-in-out;
 
           &:hover {
+            opacity: 1;
             color: v.$wt;
             background-color: hsl(0, 0%, 100%, 0.2);
           }
@@ -48,7 +62,7 @@ header {
     margin-top: 7.5rem;
     text-align: center;
     h1 {
-      font-size: 4rem;
+      font-size: clamp(3rem, 1.9rem + 3.6vw, 6.375rem);
       color: v.$wt;
       font-family: "Fraunces", serif;
       letter-spacing: 0.6rem;
@@ -65,16 +79,17 @@ header {
 
   &__content-transform {
     margin-top: 6rem;
+    flex-direction: column;
     h2 {
       font-family: "Fraunces", serif;
-      font-size: 3.5rem;
+      font-size: clamp(3.88rem, 1.93rem + 2.39vw, 6.125rem);
       color: v.$vr-dk-des-blue;
       font-weight: 900;
     }
 
     p {
       padding: 1.5rem;
-      font-size: 1.8rem;
+      font-size: clamp(1.5rem, 1.5rem + 0.8vw, 1.9rem);
       margin-top: 1.75rem;
       color: v.$dk-gyish-blue;
       font-weight: 500;
@@ -88,6 +103,7 @@ header {
       font-weight: 700;
       margin-top: 3rem;
       display: inline-block;
+      position: relative;
 
       &::before {
         content: "";
@@ -96,12 +112,10 @@ header {
         height: 1rem;
         border-radius: 1rem;
         background-color: v.$yellow;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 35%);
         z-index: -1;
-        transform: translateY(1.4rem);
         opacity: 0.4;
         transition: 0.2s ease-in-out;
       }
@@ -118,9 +132,10 @@ header {
 
   &__content-standout {
     margin-top: 6rem;
+    flex-direction: column;
     h2 {
       font-family: "Fraunces", serif;
-      font-size: 3.5rem;
+      font-size: clamp(3.8875rem, 1.5rem + 2.5vw, 6rem);
       color: v.$vr-dk-des-blue;
       font-weight: 900;
     }
@@ -131,6 +146,7 @@ header {
       color: v.$dk-gyish-blue;
       font-weight: 500;
       line-height: 2.8rem;
+      margin-top: 1.75rem;
     }
 
     a {
@@ -140,6 +156,7 @@ header {
       font-weight: 700;
       margin-top: 3rem;
       display: inline-block;
+      position: relative;
 
       &::before {
         content: "";
@@ -148,12 +165,10 @@ header {
         height: 1rem;
         border-radius: 1rem;
         background-color: v.$sft-red;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 35%);
         z-index: -1;
-        transform: translateY(1.4rem);
         opacity: 0.4;
         transition: 0.2s ease-in-out;
       }
@@ -174,14 +189,14 @@ header {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    height: 59rem;
+    height: 65rem;
     h2 {
-      font-size: 3rem;
+      font-size: clamp(3rem, 1.93rem + 3.4vw, 3.2rem);
       font-family: "Fraunces", serif;
       font-weight: 900;
     }
     p {
-      font-size: 1.5rem;
+      font-size: clamp(0.25rem, 1rem + 0.935vw, 1.7rem);
       font-weight: 600;
       line-height: 2.5rem;
       padding: 2.5rem;
@@ -198,14 +213,14 @@ header {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    height: 59rem;
+    height: 65rem;
     h2 {
-      font-size: 3rem;
+      font-size: clamp(3rem, 1.93rem + 3.4vw, 3.2rem);
       font-family: "Fraunces", serif;
       font-weight: 900;
     }
     p {
-      font-size: 1.5rem;
+      font-size: clamp(0.25rem, 1rem + 0.935vw, 1.7rem);
       font-weight: 600;
       line-height: 2.5rem;
       padding: 2.5rem;
@@ -218,7 +233,7 @@ header {
   margin-top: 5rem;
   text-align: center;
   h2 {
-    font-size: 1.75rem;
+    font-size: clamp(1rem, 1.93rem + 3.4vw, 1.8rem);
     color: v.$dk-gyish-blue;
     font-family: "Fraunces", serif;
     letter-spacing: 0.4rem;
@@ -238,22 +253,22 @@ header {
         border-radius: 50%;
       }
       p {
-        padding: 2rem 6rem;
+        padding: 2rem 5rem;
         color: v.$vr-dk-gyish-blue;
-        font-size: 1.4rem;
+        font-size: clamp(0.35rem, 0.9rem + 1.1vw, 1.75rem);
         line-height: 2.6rem;
       }
       span {
         display: block;
         &.name {
           font-family: "Fraunces", serif;
-          font-size: 1.4rem;
+          font-size: clamp(0.35rem, 0.9rem + 1.1vw, 1.75rem);
           font-weight: 700;
         }
         &.role {
           margin-top: 0.55rem;
           color: v.$gyish-blue;
-          font-size: 1.15rem;
+          font-size: clamp(0.25rem, 0.9rem + 1.1vw, 1.395rem);
         }
       }
     }
@@ -263,6 +278,32 @@ header {
 .image-square {
   margin-top: 7rem;
   grid-template-columns: repeat(2, 1fr);
+
+  .image-size {
+    height: 19rem;
+  }
+
+  .bg-properties {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-milk-bottles {
+    background-image: url(/assets/images/mobile/image-gallery-milkbottles.jpg);
+  }
+
+  &-orange {
+    background-image: url(/assets/images/mobile/image-gallery-orange.jpg);
+  }
+
+  &-ice-cream-cone {
+    background-image: url(/assets/images/mobile/image-gallery-cone.jpg);
+  }
+
+  &-sugar-cubes {
+    background-image: url(/assets/images/mobile/image-gallery-sugar-cubes.jpg);
+  }
 }
 
 footer {

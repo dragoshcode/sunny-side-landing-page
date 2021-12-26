@@ -1,11 +1,50 @@
 @media only screen and (min-width: 1360px) {
-    header {
-      background-position: center ;
+  header {
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header nav {
+    padding: 3rem 7rem;
+  }
+}
+
+@media only screen and (min-width: 947px) {
+  .features__orange p {
+    padding: 2.5rem 9rem;
+  }
+}
+
+@media only screen and (min-width: 1027px) {
+  .features {
+    &__cherry,
+    &__orange {
+      height: 45rem;
     }
   }
 
-  @media only screen and (min-width: 1660px){
-    header nav{
-        padding: 3rem 10rem;
-    }
+  .features__orange p {
+    padding: 2.5rem 9rem;
+  }
 }
+
+@media only screen and (min-width: 1100px) {
+  .features {
+    &__cherry,
+    &__orange {
+      height: 50rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1245px) {
+  .features {
+    &__cherry,
+    &__orange {
+      height: 55rem;
+    }
+  }
+
+}
+
